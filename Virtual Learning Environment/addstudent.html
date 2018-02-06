@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="UTF-8">
+	<title>Virtual learning Environment</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon" />
+	
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
+	<script src="js/ajax.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/angular.min.js"></script>
+
+	<link href='//fonts.googleapis.com/css?family=Catamaran:400,100,300,500,700,600,800,900' rel='stylesheet' type='text/css'>
+	<link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body ng-app="">
+	
+	<div ng-include="'header.html'"></div>
+
+		<div class="add">
+			
+			<h2 style="text-align: center;">ADD Student</h2>
+					
+			<form class="form1" action="" method="" enctype="">
+
+				<label for="name"> Name : </label>
+				<input type="text" placeholder="Enter the name" name="name" id="name" />
+
+				<label for="email">Email : </label>
+				<input type="email" placeholder="Enter the email" name="email" id="email" />
+
+				<label for="s_id">Student ID : </label>
+				<input type="text" placeholder="Enter the student ID" name="s_id" id="s_id" />
+
+				<label for="session">Session : </label>
+				<input type="text" placeholder="Enter the session" name="session" id="session" />
+	
+				
+				<input type="submit" value="SAVE" id="signUp"  />
+					
+			</form>
+
+		</div>
+
+	</section>
+
+</body>
+
+</html>

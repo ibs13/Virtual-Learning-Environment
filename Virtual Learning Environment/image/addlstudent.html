@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="UTF-8">
+	<title>Virtual learning Environment</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon" />
+	
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
+	<script src="js/ajax.js"></script>
+	<script src="js/bootstrap.js"></script>
+
+	<link href='//fonts.googleapis.com/css?family=Catamaran:400,100,300,500,700,600,800,900' rel='stylesheet' type='text/css'>
+	<link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+	
+	<header class="header">
+		
+		<div class="row">
+			<div class="col-sm-9">
+		  
+				<div class="row">
+					<div class="col-sm-3 logo">
+						<a href="index.html"><img src="image/logo.png" alt="VLE" height="70px" /></a>
+					</div>
+					<div class="col-sm-6">
+			  
+						<form action="./search.php" method="GET">
+							<input type="text" name="search" placeholder="Search Here..." required >
+							<button type="submit" class="button1">Search</button>
+						</form>
+				  
+					</div>
+					
+					
+					
+					<div class="col-sm-2 ciko">
+						
+							<p>Total Student : </p>
+							<p>Total Teacher : </p>
+							<p>Total Batch&nbsp &nbsp &nbsp: </p>
+						
+						</div>
+				
+					<?php } ?>
+					
+				</div>
+		  
+			</div>
+			
+			<div class="col-sm-2">
+		
+				<div class="col-sm-7">
+					<a href="contractus.php"><button type="button" class="button2">Profile</button></a>
+				</div>
+				<div class="col-sm-5 sign">
+					
+					<a href='signin.php'><input id='sub' type='submit' value='SIGN IN' /></a>
+						
+				</div>
+				
+		</div>
+		
+	</header>
+
+	<section>
+		
+		<div class="banner">
+			
+			<h2>Virtual Learning Environment</h2>
+			<p>Department of CSE, PUST</p>
+
+		</div>
+
+			
+		<nav class="main-menu">
+			<ul>
+				<li class="jeipageaasi"><a href="#">Home</a></li>
+				<li><a href="#">Add</a>
+
+					<ul>
+						<li><a href="#">Teacher</a></li>
+						<li><a href="#">Student</a></li>
+						<li><a href="#">Course</a></li>
+						<li><a href="#">Routine</a>
+							<ul>
+								<li><a href="#">Class Routine</a></li>
+								<li><a href="#">Exam Routine</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Result</a></li>
+					</ul>
+
+				</li>
+				<li><a href="#">View</a>
+					<ul>
+						<li><a href="#">Teacher</a></li>
+						<li><a href="#">Student</a></li>
+						<li><a href="#">Course</a></li>
+						<li><a href="#">Routine</a>
+							<ul>
+								<li><a href="#">Class Routine</a></li>
+								<li><a href="#">Exam Routine</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Result</a></li>
+					</ul>
+				</li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Contract Us</a></li>
+			</ul>
+		</nav>
+
+		<div class="add">
+			
+			<h2 style="text-align: center;">ADD TEACHER</h2>
+					
+			<form class="form1" action="" method="" enctype="">
+
+				<label for="name"> Name : </label>
+				<input type="text" placeholder="Enter the name" name="name" id="name" />
+
+				<label for="email">Email : </label>
+				<input type="email" placeholder="Enter the email" name="email" id="email" />
+					
+				<label for="category">Designations : </label>
+				<select name="category" id="category">
+				
+					<option value="Professor">Professor</option>
+					<option value="Associate Professor">Associate Professor</option>
+					<option value="Assistant Professor">Assistant Professor</option>
+					<option value="Senior Lecturer">Senior Lecturer</option>
+					<option value="Lecturer">Lecturer</option>
+				
+				</select>
+				
+				<input type="submit" value="SAVE" id="signUp"  />
+					
+			</form>
+
+		</div>
+
+	</section>
+
+</body>
+
+</html>

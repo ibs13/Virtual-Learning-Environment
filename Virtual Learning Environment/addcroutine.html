@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="UTF-8">
+	<title>Virtual learning Environment</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon" />
+	
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
+	<script src="js/ajax.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/angular.min.js"></script>
+
+	<link href='//fonts.googleapis.com/css?family=Catamaran:400,100,300,500,700,600,800,900' rel='stylesheet' type='text/css'>
+	<link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+
+	
+	<div ng-app="" ng-include="'header.html'"></div>
+			
+	<h2 style="text-align: center;">ADD Class Routine</h2>
+
+	<div id="mApp">
+		
+		<div class="add" ng-app="MyApp" ng-controller="MyController">
+
+			<div  ng-show="IsVisible">
+
+				<form class="form1" action="" method="" enctype="" >
+						
+					<label for="category"> Set Slot : </label>
+					<select name="category" id="category" >
+
+						<option value=""> Choose Slot </option>
+						<option value="1"> First Slot </option>
+						<option value="2"> Second Slot </option>
+						<option value="3"> Third Slot </option>
+					
+					</select>
+
+					<label for="category"> Type : </label>
+					<select name="category" id="category" >
+
+						<option value=""> Choose Type </option>
+						<option value="thery"> Theory </option>
+						<option value="sessional"> Sessional </option>
+					
+					</select>
+
+					<label for="category"> Semister : </label>
+					<select name="category" id="category" >
+
+						<option value=""> Choose Semister </option>
+						<option value="1-1"> First Semister </option>
+						<option value="1-2"> Second Semister </option>
+						<option value="2-1"> Third Semister </option>
+						<option value="2-2"> Forth Semister </option>
+						<option value="3-1"> Fifth Semister </option>
+						<option value="3-2"> Sixth Semister </option>
+						<option value="4-1"> Seventh Semister </option>
+						<option value="4-2"> Eighth Semister </option>
+					
+					</select>
+					
+					<input type="button" value="NEXT" id="signUp" ng-click="ShowHide()" />
+						
+				</form>
+
+			</div>
+
+			<div class="col-sm-2"></div>
+			<div class="col-sm-8" ng-show="Visible">
+
+				<form class="" action="" method="" enctype="" >
+
+					<table class="table">
+							
+						<th style="text-align:center;color:#16a085;font-weight:bold">Day</th>
+						<th style="text-align:center;color:#16a085;font-weight:bold">First Class</th>
+						<th style="text-align:center;color:#16a085;font-weight:bold">Second Class</th>
+						<th style="text-align:center;color:#16a085;font-weight:bold">Third Class</th>
+
+						<tr style="text-align:center;color:#1abc9c">
+							<td>Saturday</td>
+							<td><label for="c_code"> Code : </label>
+								<input type="text" placeholder="Enter the course code" name="c_code" id="c_code" />
+								
+								<br />
+
+								<label for="name"> Name : </label>
+								<input type="text" placeholder="Enter the name" name="name" id="name" />
+
+							</td>
+							<td><label for="c_code"> Code : </label>
+								<input type="text" placeholder="Enter the course code" name="c_code" id="c_code" />
+
+								<br />
+
+								<label for="name"> Name : </label>
+								<input type="text" placeholder="Enter the name" name="name" id="name" />
+
+							</td>
+							<td><label for="c_code"> Code : </label>
+								<input type="text" placeholder="Enter the course code" name="c_code" id="c_code" />
+
+								<br />
+
+								<label for="name"> Name : </label>
+								<input type="text" placeholder="Enter the name" name="name" id="name" />
+
+							</td>
+						</tr>
+
+						<tr style="text-align:center;color:#1abc9c">
+							<td>Sunday</td>
+							<td><label for="c_code"> Code : </label>
+								<input type="text" placeholder="Enter the course code" name="c_code" id="c_code" />
+								
+								<br />
+
+								<label for="name"> Name : </label>
+								<input type="text" placeholder="Enter the name" name="name" id="name" />
+
+							</td>
+							<td><label for="c_code"> Code : </label>
+								<input type="text" placeholder="Enter the course code" name="c_code" id="c_code" />
+
+								<br />
+
+								<label for="name"> Name : </label>
+								<input type="text" placeholder="Enter the name" name="name" id="name" />
+
+							</td>
+							<td><label for="c_code"> Code : </label>
+								<input type="text" placeholder="Enter the course code" name="c_code" id="c_code" />
+
+								<br />
+
+								<label for="name"> Name : </label>
+								<input type="text" placeholder="Enter the name" name="name" id="name" />
+
+							</td>
+						</tr>
+
+						<tr style="text-align:center;color:#1abc9c">
+							<td>Monday</td>
+							<td><label for="c_code"> Code : </label>
+								<input type="text" placeholder="Enter the course code" name="c_code" id="c_code" />
+								
+								<br />
+
+								<label for="name"> Name : </label>
+								<input type="text" placeholder="Enter the name" name="name" id="name" />
+
+							</td>
+							<td><label for="c_code"> Code : </label>
+								<input type="text" placeholder="Enter the course code" name="c_code" id="c_code" />
+
+								<br />
+
+								<label for="name"> Name : </label>
+								<input type="text" placeholder="Enter the name" name="name" id="name" />
+
+							</td>
+							<td><label for="c_code"> Code : </label>
+								<input type="text" placeholder="Enter the course code" name="c_code" id="c_code" />
+
+								<br />
+
+								<label for="name"> Name : </label>
+								<input type="text" placeholder="Enter the name" name="name" id="name" />
+
+							</td>
+						</tr>
+
+						<tr style="text-align:center;color:#1abc9c">
+							<td>Tuesday</td>
+							<td><label for="c_code"> Code : </label>
+								<input type="text" placeholder="Enter the course code" name="c_code" id="c_code" />
+								
+								<br />
+
+								<label for="name"> Name : </label>
+								<input type="text" placeholder="Enter the name" name="name" id="name" />
+
+							</td>
+							<td><label for="c_code"> Code : </label>
+								<input type="text" placeholder="Enter the course code" name="c_code" id="c_code" />
+
+								<br />
+
+								<label for="name"> Name : </label>
+								<input type="text" placeholder="Enter the name" name="name" id="name" />
+
+							</td>
+							<td><label for="c_code"> Code : </label>
+								<input type="text" placeholder="Enter the course code" name="c_code" id="c_code" />
+
+								<br />
+
+								<label for="name"> Name : </label>
+								<input type="text" placeholder="Enter the name" name="name" id="name" />
+
+							</td>
+						</tr>
+
+						<tr style="text-align:center;color:#1abc9c">
+							<td>Wednesday</td>
+							<td><label for="c_code"> Code : </label>
+								<input type="text" placeholder="Enter the course code" name="c_code" id="c_code" />
+								
+								<br />
+
+								<label for="name"> Name : </label>
+								<input type="text" placeholder="Enter the name" name="name" id="name" />
+
+							</td>
+							<td><label for="c_code"> Code : </label>
+								<input type="text" placeholder="Enter the course code" name="c_code" id="c_code" />
+
+								<br />
+
+								<label for="name"> Name : </label>
+								<input type="text" placeholder="Enter the name" name="name" id="name" />
+
+							</td>
+							<td><label for="c_code"> Code : </label>
+								<input type="text" placeholder="Enter the course code" name="c_code" id="c_code" />
+
+								<br />
+
+								<label for="name"> Name : </label>
+								<input type="text" placeholder="Enter the name" name="name" id="name" />
+
+							</td>
+						</tr>
+					
+					</table>
+
+					<div class="form1">
+
+					<input type="button" value="SAVE" id="signUp" />
+
+					</div>
+
+				</form>
+
+			</div>
+
+		</div>
+
+	</div>
+
+<script type="text/javascript">
+    var app = angular.module('MyApp', [])
+    app.controller('MyController', function ($scope) {
+        //This will hide the DIV by default.
+        $scope.IsVisible = true;
+        $scope.Visible = false;
+        $scope.ShowHide = function () {
+            //If DIV is visible it will be hidden and vice versa.
+            $scope.IsVisible =  false;
+            $scope.Visible =  true;
+        }
+    });
+
+    var mApp = document.getElementById('mApp');
+
+    angular.element(document).ready(function() {
+   	angular.bootstrap(mApp, ['MyApp']);
+	});
+
+</script>
+
+</body>
+
+</html>
